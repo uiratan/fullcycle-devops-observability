@@ -59,13 +59,21 @@ MIDDLEWARE = [
 ELASTIC_APM = {
   # Set required service name. Allowed characters:
   # a-z, A-Z, 0-9, -, _, and space
-  'SERVICE_NAME': 'codeprogress',
+#   'SERVICE_NAME': 'codeprogress',
 
-  # Set custom APM Server URL (default: http://localhost:8200)
-  'SERVER_URL': 'http://apm:8200',
+#   # Set custom APM Server URL (default: http://localhost:8200)
+#   'SERVER_URL': 'http://apm:8200',
+#   'DEBUG': True,
+#   'ENVIRONMENT': 'production',
+
+  'SERVICE_NAME': 'codeprogress',
+  'SECRET_TOKEN': 'khWDviILnPvNkj8Q4X',
+  'SERVER_URL': 'https://82354dbccff24c168af27d4fb3648c4d.apm.us-central1.gcp.cloud.es.io:443',
   'DEBUG': True,
   'ENVIRONMENT': 'production',
+
 }
+
 
 ROOT_URLCONF = 'codeprogress.urls'
 

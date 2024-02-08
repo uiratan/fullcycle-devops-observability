@@ -170,6 +170,9 @@ setup.kibana:
 # cloud.id: "observability-deployment:dXMtZWFzdC0xLmF3cy5mb3VuZC5pbyQ4MzE2OGQ1MGUwN2U0ZmFhYTk1MjgxNzQxMTUwMzA2NSQzMGRiOWRjOTk4YTc0MGEwYjg0OThmODZhZmRjNTBiMw=="
 # cloud.auth: "elastic:PoFpWBdAoU9Y7kbAU64xXyyh"
 
+cloud.id: "fullcycle:dXMtY2VudHJhbDEuZ2NwLmNsb3VkLmVzLmlvOjQ0MyQ2MzRjMGIxY2RmNTM0YmExYTM3ZmY1MDdjYWMzNTRjOSRiMzc2MjM2YzhlNGM0NzU2YTYyNzIyMzIwMzdkNWRlNg=="
+cloud.auth: "elastic:Pmveza3FMw93ehIgqADU4JD9"
+
 # ================================== Outputs ===================================
 
 # Configure what output to use when sending the data collected by the beat.
@@ -177,15 +180,16 @@ setup.kibana:
 # ---------------------------- Elasticsearch Output ----------------------------
 output.elasticsearch:
   # Array of hosts to connect to.
-  hosts: ["elasticsearch:9200"]
+  # hosts: ["elasticsearch:9200"]
+  hosts: ["localhost:9200"]
 
   # Protocol - either `http` (default) or `https`.
   #protocol: "https"
 
   # Authentication credentials - either API key or username/password.
   #api_key: "id:api_key"
-  username: "elastic"
-  password: "changeme"
+  # username: "elastic"
+  # password: "changeme"
 
 # ------------------------------ Logstash Output -------------------------------
 #output.logstash:
